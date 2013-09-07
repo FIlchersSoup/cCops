@@ -1,0 +1,40 @@
+name: pCops
+main: com.digitalbrainery.pCops.pCops
+version: 0.0.2-ALPHA
+website: meloncraft.likes-pie.com
+description: pCops Plugin for CraftBukkit
+authors: [FilchersSoup]
+
+commands:
+  pcops:
+    description: Base command for pCops
+    usage: /pcops <command>
+    aliases: [pc,cop]
+    
+
+permissions:
+  pcops.*:
+    description: Give players with op everything by default
+    default: op
+    children:
+      pcops.basic: true
+      pcops.flag: true
+      pcops.read: true
+      pcops.clrflag: true
+  pcops.basic:
+    description: The most basic command
+    default: op
+  pcops.flag:
+    description: Perform an action on someone
+    default: op
+  pcops.read:
+    description: Read from a .YML
+    default: op
+  pcops.clrflag:
+    description: Remove pCops flag from a player.
+    default: op
+  pcops.signcreate:
+    description: Create Begin and Exit signs for pCops.
+    default: op
+    
+            
