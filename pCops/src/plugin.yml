@@ -21,6 +21,7 @@ permissions:
       pcops.flag: true
       pcops.read: true
       pcops.clrflag: true
+      pcops.signpost: true
   pcops.basic:
     description: The most basic command
     default: op
@@ -33,8 +34,6 @@ permissions:
   pcops.clrflag:
     description: Remove pCops flag from a player.
     default: op
-  pcops.signcreate:
+  pcops.signpost:
     description: Create Begin and Exit signs for pCops.
     default: op
-    
-            

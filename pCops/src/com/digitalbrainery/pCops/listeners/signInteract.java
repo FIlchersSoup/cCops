@@ -25,7 +25,6 @@ public class signInteract extends pCopsListener
 	{
 		final Player player = event.getPlayer();
 
-		/*final Block block = event.getClickedBlock();*/
 		final Sign sign = (Sign)event.getClickedBlock().getState();
 		
 		StringBuilder flagPath = new StringBuilder(player.getName());
@@ -41,7 +40,6 @@ public class signInteract extends pCopsListener
 			{
 				player.sendMessage(ChatColor.GOLD + "Welcome to Cops and Robbers!");
 				final Random rand1 = new Random();
-				rand1.nextInt(2);
 				
 				if(rand1.nextInt(2) == 1)
 				{
@@ -110,8 +108,8 @@ public class signInteract extends pCopsListener
 			else if(flag.equalsIgnoreCase("cop") || flag.equalsIgnoreCase("robber"))
 			{
 				
-				final removeEquipment removeEquipment = new removeEquipment();
-				removeEquipment.onExit(player, flag);
+				/*final removeEquipment removeEquipment = new removeEquipment();
+				removeEquipment.onExit(player, flag);*/
 				
 				pFile.set(flagPath.toString(), null);
 				player.sendMessage(ChatColor.GOLD + "You have exited pCops!");
